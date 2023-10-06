@@ -18,6 +18,18 @@ Adds depth to anything with an [AST selector](https://github.com/syntax-tree/mda
      }
 
 ## Themeing
+What this plugin does is add a custom "depth" value to your nodes of choice for themeing with S/CSS. Here is an example with the strong element.
+
+Before:
+   ```html
+   <strong>the distance from Earth to the Sun,</strong>
+   ```
+
+After:
+   ```html
+   <strong depth="4">the distance from Earth to the Sun,</strong>
+   ```
+
 This is meant mostly to be used to theme thing based off of the header depth they are. For example, to theme strong text to be the color of its parent header (and clean that whole shebang up a bit), I have the following setup:
 
 ```scss
