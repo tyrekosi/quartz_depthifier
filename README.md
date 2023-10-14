@@ -43,19 +43,19 @@ $colors: (
 );
 
 @each $header, $color in $colors {
-  #{$header} {
+  article.popover-hint #{$header} {
     color: $color;
 
     & span.math.math-inline span.katex {
-      color: $color!important;
+      color: $color;
     }
   }
   
-  strong[depth="#{str-slice($header, 2)}"] {
+  article.popover-hint strong[depth="#{str-slice($header, 2)}"] {
     color: $color;
 
     & span.math.math-inline span.katex {
-      color: $color!important;
+      color: $color;
     }
   }
 }
